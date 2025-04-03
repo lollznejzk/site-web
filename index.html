@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANRShop - iPhone Cases & Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <h1>ANRShop</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#products">Produits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Coques iPhone et Ensembles Mode</h2>
+        <p>Commandez vos accessoires et habits en toute sécurité avec PayPal.</p>
+    </section>
+
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="iphone-case.jpg" alt="Coque iPhone">
+                <h3>Coque iPhone</h3>
+                <p>Protection élégante et résistante.</p>
+                <button onclick="buyNow('Coque iPhone', 5)">Acheter - 5€</button>
+            </div>
+            <div class="product">
+                <img src="ensemble.jpg" alt="Ensemble Mode">
+                <h3>Ensemble Mode</h3>
+                <p>Style et confort garantis.</p>
+                <button onclick="buyNow('Ensemble Mode', 45)">Acheter - 45€</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@anrshop.com</p>
+    </section>
+
+    <footer>
+        <p>© 2025 ANRShop - Tous droits réservés.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chat-container">
+        <div id="chat-box">
+            <div id="chat-messages"></div>
+            <input type="text" id="user-input" placeholder="Posez votre question..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Envoyer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+  </html>
